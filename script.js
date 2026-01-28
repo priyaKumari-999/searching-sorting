@@ -26,20 +26,32 @@ function renderProducts(data) {
     div.innerHTML = `
     <h3>product title</h3>  
     <p>product category</p>
-    <p class="price"> product price </p>
+    <p class="price"> product price</p>
   `; // pass the product title, category and price here
     container.appendChild(div);
   }
 
 }
 
+// access the input box to get search value
+// assigned filteredProducts as an empty array in order to store new searched product
+// check if search value is present / included in product title or not
+// if yes then push that product in filteredProducts array
 
 function handleSearch() {
   // write the searching logic
+  
 }
 
+
+// access the sortvalue
+// will make shallow copy of filteredProducts on which will do sorting
+// then sort the product price based on the option selected by user
+// and pass this sorted data to renderProducts
+
 function handleSort() {
-// write the sorting logic
+    // write the sorting logic
+
 }
 
 renderProducts(products);
